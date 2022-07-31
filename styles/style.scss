@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Sans Pro", sans-serif;
+}
+body {
+  position: relative;
+}
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1;
+  width: 55vw;
+  height: 150vh;
+}
+header {
+  nav {
+    width: 100%;
+    ul {
+      margin: 1rem;
+      width: 70%;
+      display: flex;
+      list-style-type: none;
+      justify-content: space-around;
+      li {
+        font-size: 1.7rem;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+
+  section.left {
+    flex: 3 1 500px;
+    padding: 1.5rem;
+    h1 {
+      font-size: 4rem;
+      color: orange;
+    }
+    p {
+      font-size: 1.5rem;
+      padding: 1rem 0rem;
+    }
+  }
+
+  section.right {
+    flex: 1 1 600px;
+    position: relative;
+    img {
+      border-radius: 50%;
+      width: 20vw;
+      height: 20vw;
+      position: absolute;
+      top: 55vh;
+      right: 25vw;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+section.table {
+  flex: 3 1 500px;
+  padding: 1.5rem;
+  table {
+    border-collapse: collapse;
+    tr {
+      border-bottom: 2px solid gray;
+      transition: all 0.2s ease;
+      td {
+        padding: 1rem;
+      }
+      &:hover {
+        background-color: rgb(254, 201, 103);
+      }
+    }
+  }
+}
+section.picture {
+  flex: 1 1 600px;
+  position: relative;
+  img {
+    width: 30vw;
+  }
+  div.orangeRcet {
+    width: 30vw;
+    height: 60vh;
+    background-color: orange;
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    z-index: -1;
+  }
+}
+
+footer {
+  a {
+    padding: 1rem;
+  }
+}
+
+.active {
+  color: orange;
+}
+
+@media screen and (max-width: 1100px) {
+  .orange {
+    opacity: 0.5;
+  }
+
+  header {
+    nav {
+      ul {
+        flex-direction: column;
+        width: 100%;
+        li {
+          padding: 1rem 0rem;
+          border-bottom: 2px solid gray;
+        }
+      }
+    }
+  }
+
+  main {
+    section.right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1rem;
+      img {
+        position: static;
+        transform: none;
+        width: 50vw;
+        height: 50vw;
+      }
+    }
+    section.picture {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 50vw;
+      }
+      div.orangeRcet {
+        display: none;
+      }
+    }
+  }
+}
