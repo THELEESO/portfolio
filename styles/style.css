@@ -66,33 +66,31 @@ main section.right img {
   right: 25vw;
   transform: translateY(-50%);
 }
-
-section.table {
+main section.table {
   flex: 3 1 500px;
   padding: 1.5rem;
 }
-section.table table {
+main section.table table {
   border-collapse: collapse;
 }
-section.table table tr {
+main section.table table tr {
   border-bottom: 2px solid gray;
   transition: all 0.2s ease;
 }
-section.table table tr td {
+main section.table table tr td {
   padding: 1rem;
 }
-section.table table tr:hover {
+main section.table table tr:hover {
   background-color: rgb(254, 201, 103);
 }
-
-section.picture {
+main section.picture {
   flex: 1 1 600px;
   position: relative;
 }
-section.picture img {
+main section.picture img {
   width: 30vw;
 }
-section.picture div.orangeRcet {
+main section.picture div.orangeRcet {
   width: 30vw;
   height: 60vh;
   background-color: orange;
@@ -100,6 +98,61 @@ section.picture div.orangeRcet {
   top: 30px;
   left: 80px;
   z-index: -1;
+}
+main section.form {
+  flex: 1 1 600px;
+}
+main section.form form {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1.5rem;
+}
+main section.form form div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem;
+}
+main section.form form div label {
+  font-size: 1.5rem;
+  width: 10rem;
+}
+main section.form form div textarea,
+main section.form form div input {
+  background-color: rgb(254, 220, 156);
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  width: 80%;
+}
+main section.form form div textarea {
+  vertical-align: top;
+}
+main section.form form button {
+  align-self: center;
+  width: 10rem;
+  background-color: rgb(253, 199, 97);
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.2rem;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+main div.line {
+  background-color: gray;
+  width: 3px;
+}
+main section.contact {
+  flex: 1 1 500px;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+main section.contact div.content h2 {
+  margin: 1rem 0rem;
 }
 
 footer a {
